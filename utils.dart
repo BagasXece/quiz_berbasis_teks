@@ -1,10 +1,5 @@
 import 'dart:io';
 
-String? getUserInput(String prompt) {
-  stdout.write(prompt);
-  return stdin.readLineSync();
-}
-
 void showFeedback(double percent) {
   print("\n===== HASIL QUIZ =====");
   print("Nilai: ${percent.toStringAsFixed(2)}%\n");
