@@ -12,3 +12,5 @@
 3. Menilai jawaban dan menampilkan hasil.
 4. Tambahkan fitur ulang kuis.
 5. Dokumentasi teknis dan panduan.
+
+P.S. Yang ada link flowchart di branch [develop](https://github.com/BagasXece/quiz_berbasis_teks/tree/develop)
