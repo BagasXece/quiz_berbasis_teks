@@ -27,10 +27,11 @@ void main() {
 
 void _startQuizFlow() {
   while (true) {
+    // periksa apa fungsi startQuiz() ada error
     try {
-      startQuiz();
+      startQuiz(); // fungsi yang menjalankan quiz
     } catch (e) {
-      print("\x1B[2J\x1B[H");
+      print("\x1B[2J\x1B[H"); // kode ansi yang berfungsi untuk membersihkan terminal
       exit(0);
     }
 
