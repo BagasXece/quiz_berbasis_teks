@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'quiz.dart';
 import 'utils.dart';
 
@@ -25,7 +27,12 @@ void main() {
 
 void _startQuizFlow() {
   while (true) {
-    startQuiz(); // Menjalankan quiz
+    try {
+      startQuiz();
+    } catch (e) {
+      print("\x1B[2J\x1B[H");
+      exit(0);
+    }
 
     // Menanyakan apakah pengguna ingin mengulang quiz
     String? again = getValidatedInput(
